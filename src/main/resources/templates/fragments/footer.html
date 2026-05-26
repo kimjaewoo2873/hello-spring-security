@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="practiceFooter" class="container mt-5 pb-4 practice-footer">
+    <hr class="text-muted">
+    <p class="text-center text-muted small mb-0">
+        <span th:text="${'실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (E) a hh:mm:ss')}">
+            실습 수행
+        </span>
+        <span class="mx-2">|</span>
+        <span>학번: 2071463</span>
+        <span class="mx-2">|</span>
+        <span>성명: 김재우</span>
+    </p>
+</footer>
+</body>
+</html>
