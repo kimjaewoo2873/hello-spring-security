@@ -34,4 +34,9 @@ public class HomeController {
         model.addAttribute("roles", roles);
         return "home";
     }
+
+    @GetMapping("/error/403")
+    public String accessDenied() {
+        return "error/403";
+    }
 }
